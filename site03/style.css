@@ -1,0 +1,47 @@
+body{
+    background-color: #3b3b3b;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover{
+    color: coral;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+p{
+    color: blanchedalmond;
+    margin-right: 10px;
+    font-size: 20px;
+}

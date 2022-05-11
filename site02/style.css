@@ -1,0 +1,18 @@
+body{
+    background-color: #93b1e5;
+    margin: 20px;
+}
+
+h1{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.text_description{
+    color: rgb(230, 38, 38);
+}
+
+#outra_tag{
+    color: blueviolet;
+}
