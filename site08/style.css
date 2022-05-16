@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    animation: body 4s infinite linear;
+}
+
+@keyframes body {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: purple;
+    }
+}
+
+h1{
+    color: aliceblue;
+    animation: font-size  4s infinite alternate;
+}
+
+@keyframes font-size {
+from {
+    font-size: 100%;
+}
+to {
+    font-size: 200%;
+}
+}
