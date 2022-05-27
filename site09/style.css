@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+}
+
+.hero{
+    background-image: url(../assets02/bg-3.jpg);
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid #ccc;
+}
+
+.hero nav ul{
+    text-align: right;
+    margin: 20px 50px 0 0; /*top, direira, baixo, esquerda*/
+}
+
+.hero nav li{
+    display: inline-block;
+    margin: 0 10px;
+    margin: 10px;
+    border: 1px solid #fff;
+}
+
+.hero nav a{
+    background: rbga(231, 220, 220, 0.1);
+    display: block;
+    padding: 10px;
+    color: rgb(122, 106, 106);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero nav a:hover{
+    background: rgba(231, 220, 220, 0.5);
+    color: rgb(122, 106, 106);
+}
+
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #000;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.content-section{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: right;
+    color: black;
+    margin-bottom: 15px;
+    background-color: #c9bebe;
+}
