@@ -52,10 +52,12 @@ body{
     font-weight: bold;
     text-shadow: 3px 3px 5px #000;
 }
+/* THIS IS ANOTHER */
 
 main{
     width: 80%;
     margin: auto;
+    background-color: #c9bebe;
 }
 
 .content-section{
