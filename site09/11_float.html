@@ -19,24 +19,50 @@
         }
 
         #container div{
-            width: 150px;
+            width: 80px;
             height: 50px;
             border: 2px solid red;
             margin: 5px;
         }
 
+        #div1{
+            float: left;
+        }
         #div2{
             float: left;
         }
         #div3{
-            background: #ccc;
+            float: left;
         }
 
         footer{
+            height: 50px;
+            background-color: blue;
             text-align: right;
             color: rgb(0, 14, 14);
+            clear: left;
 
         }
+
+        header{
+            background-color: #ccc;
+            height: 50px;
+        }
+
+        nav{
+            width: 25%;
+            height: 50px;
+            background-color: orange;
+            float: left;
+        }
+
+        main{
+            width: 70%;
+            height: 100px;
+            background-color: yellow;
+            float: both;    
+        }
+
     </style>
 </head>
 <body>
@@ -44,8 +70,12 @@
     <div id="container">
         <div id="div1">Div_01</div>
         <div id="div2">Div_02</div>
-        <div id="div3">Div_03</div>
+        <div id="div3">Div_03</div> <br>
     </div>
+    <hr>
+    <header>Header</header> <br>
+    <nav>Nav</nav> <br>
+    <main>Main </main> <br>
 </body>
 <footer>
     <p>&copy; Arthur Mariano</p>
