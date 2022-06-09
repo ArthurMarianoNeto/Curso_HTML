@@ -1,0 +1,75 @@
+body{
+    font-family: tahoma, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#principal{
+    width: 1024px;
+    margin: 20px auto;
+}
+
+.header-top{
+    height: 50px;
+    background-color: #220505;
+    position: relative;
+}
+
+.logotipo{
+    margin: 5px 0 0 0;
+}
+
+.header-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    padding: 13px;
+}
+
+.header-nav a{
+    text-decoration: none;
+    color: #cdd5db;
+    text-transform: uppercase;
+}
+
+.portifolio{
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 50px 100px;
+}
+
+.portifolio h1{
+    font-size: 36px;
+    color: #252525;
+}
+
+.portifolio p{
+    font-size: 16px;
+    line-height: 2;
+    color: #252525;
+}
+
+.gallery{
+    margin-top: 100px;
+    color: #555;
+    padding: 0 100px 50px 10px;
+    overflow: auto;
+}
+
+.gallery-call{
+    width: 32%;
+    float: left;
+    text-align: center;
+}
