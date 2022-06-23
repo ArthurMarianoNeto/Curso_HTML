@@ -16,13 +16,23 @@
                 <label for="">Email</label>
                 <input type="email">
                 <label for="">Numero de filhos</label>
-                <input type="number">
+                <input type="number" min="0" max="10">
+                <br>
                 <label for="">Data de nascimento</label>
-                <input type="date">
-                <label for="">
+                <input type="date" min="2021-01-01" max="2090-01-01">
+                <p>Sexo</p>
+                <label for="">Masculino</label>
+                <input type="radio" name="Sexus" value="M">
+                <label for="">Feminino</label>
+                <input type="radio" name="Sexus" value="F">
+                <label for="">Indefinido</label>
+                <input type="radio" name="Sexus" value="I">
+                <br>
+                <br>
 
 
-            <input type="submit" value="ok", class="btn">
+
+            <input type="submit" value="Manda Bala", class="btn">
         </fieldset>
     </form>
 </body>
