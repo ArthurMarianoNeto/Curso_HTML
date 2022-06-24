@@ -8,15 +8,15 @@
 
 </head>
 <body>
-    <h1 class="titulo">Exemplo de formulário</h1>
-    <form action="#" method="GET" class="formLogin">
+    <h1 class="titulo">Formulário</h1>
+    <form action="#" method="POST" class="formLogin">
         <fieldset>
 
             <legend>Dados pessoais</legend>
                 <label for="">Email</label>
-                <input type="email">
+                <input type="email" required placeholder="Digite o seu email">
                 <label for="">Numero de filhos</label>
-                <input type="number" min="0" max="10">
+                <input type="number" min="0" max="10" step="1">
                 <br>
                 <label for="">Data de nascimento</label>
                 <input type="date" min="2021-01-01" max="2090-01-01">
@@ -37,12 +37,62 @@
                     Indefinido
                 </label>
                 <br>
-                <br>
+                <input type="hidden" name="expira" value="2022-12-31">
                 
+                <label for="">Estado</label>
+                <select name="estado" id="">
+                    <option value="0"> Selecione </option>
+                    <option value="GO"> Goiás </option>
+                    <option value="SP"> São Paulo </option>
+                    <option value="RS"> Rio Grande do Sul </option>
+                    <option value="MG"> Minas Gerais </option>
+                    <option value="DF"> Distrito Federal </option>
+                    <option value="MT"> Mato Grosso </option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+                <legend>Área de Interesse</legend>
+                <input type="checkbox" name="html" value= "html">
+                HTML
+                <input type="checkbox" name="html" value= "css">
+                CSS
+                <input type="checkbox" name="html" value= "javascript">
+                JavaScript 
+                <input type="checkbox" name="html" value= "=ruby">
+                Ruby
+                <input type="checkbox" name="html" value= "rails">
+                Rails
+                <input type="checkbox" name="html" value= "java">
+                Java
                 
-                
-                <input type="submit" value="Manda Bala", class="btn">
-        </fieldset>
-    </form>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Mensagens</legend>
+                <textarea style="resize: none;" name="msg" id="" cols="30" rows="10" maxlength="200"></textarea>
+                <textarea style="resize: none;" name="contrato" id="" cols="30" rows="10" disabled>Aqui será inserido o texto referente ao contrato</textarea>
+                <label for=""><input type="checkbox" checked>Li e aceito</label>
+                <input type="range" min="0" max="10" step="2">
+                <input type="time">
+                <input type="color">
+            </fieldset>
+
+            <select multiple size="3">
+                <option>opcao 01</option>
+                <option>opcao 02</option>
+                <option>opcao 03</option>
+                <option>opcao 04</option>
+                <option>opcao 05</option>
+                <option>opcao 06</option>
+                <option>opcao 07</option>
+            </select>
+
+            <br>
+            <input type="submit" value="Manda Bala", class="btn">
+            <input type="button" value="Botão", class="btn">
+            <input type="reset" value="reset", class="btn">
+        </form>
 </body>
 </html>
+
