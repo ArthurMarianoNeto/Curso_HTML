@@ -12,13 +12,14 @@
 
         div{
             width: 100px;
-            height: 100px;
+            height: 50px;
             background-color: grey;
 
             transition-property: width, height;
             transition-duration: 1s, 3s;
             transition-timing-function: eascubic-bezier(.61,.33,.32,1.81);
             transition-delay: 0s, .8s;
+            /* https://cubic-bezier.com/#.17,.67,.83,.67 */
         }
 
         div:hover{
@@ -34,7 +35,8 @@
 <body>
     <h1>
         <span>Estrutura Básica</span>
-        <div>1</div>
+        
+        <div>Home</div>
     </h1>
 </body>
 </html>
