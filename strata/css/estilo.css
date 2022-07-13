@@ -145,13 +145,21 @@ textarea{
 .button-default{
     display: inline-block;
     background-color: #49bf9d;
-    border: 2px solid #49bf9d;
-    color: #fff;
+    border: 3px solid #49bf9d;
+    color: white;
     padding: .75em 1.5em; 
     border-radius: 5px;
     font-size: .8em;
     width: auto;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    /* background-color: #efefef; */
+}
 
+.button-default:hover{
+    border: 2px solid #49bf9d;
+    border-color: transparent;
+    /* color: inherit; */
 }
 
 .button-default-stroke{
@@ -159,6 +167,13 @@ textarea{
     border: 2px solid #efefef;
     color: inherit;
 }
+
+.button-default-stroke:hover{
+    background-color: #49bf9d;
+    border: 2px solid #49bf9d;
+    background-color: white;
+}
+
 
 .button-default-small{
     font-size: .6em;
