@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="descrição muito boa">
+    <meta name="keywords" content="html5, tecnologia">
+    <title>Content</title>
+
+    <style>
+        div{
+            border: 3px solid gray;
+            padding: 25px;
+            position: relative;
+            margin: 25px;
+        }
+
+        div::before{
+            content: "Texto antes do conteúdo - ";
+            background: #cccc;
+        }
+        div::after{
+            content: " - Texto depois do conteúdo";
+            background: #cccc;
+            content: "";
+            background: blue;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div> Texto principal da div</div>
+
+    <h1>
+        <span>Estrutura Básica</span>
+    </h1>
+
+    <hr>
+    <article>
+        <p>Antes do Título</p>
+        <h3>Titulo do Artigo</h3>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="23_transicao.html" title="Veja exercícios anterior">Link Interno</a></li>
+        <li><a href="https://sites.google.com/site/thiesto1" target="blank">Link Externo</a></li>
+        <li><a href="https://sites.google.com/site/thiesto1/qc.pdf" target="blank">Link Externo</a></li>
+    </ul>
+
+</html>
