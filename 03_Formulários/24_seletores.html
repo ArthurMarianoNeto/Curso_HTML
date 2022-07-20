@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="descrição muito boa">
+    <meta name="keywords" content="html5, tecnologia">
+    <title>Treinamento CSS</title>
+
+    <style>
+        article:nth-child(1) a{
+            color: red;
+        }
+
+        article:nth-child(2) > p{
+            color: blue;
+        }
+        article:nth-child(3) h3 + p{
+            color: red;
+        }
+        article:nth-child(3) h3 ~ p{
+            color: pink;
+        }
+
+        article:not(.destaque){
+            color: green;
+        }
+
+        .destaque{
+            background-color: aqua;
+        }
+
+        a[href="#"]{
+            opacity: 0.2;
+        }
+        
+        a[href^="http"]{
+            color: red;
+        }
+
+        a[title]{
+            color: green;
+        }
+
+        a[href$=".pdf"]{
+            /* color: blue; */
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>
+        <span>Estrutura Básica</span>
+    </h1>
+    <article>
+        <h3>Titulo do Artigo</h3>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+
+    </article>
+    <hr>
+    <article>
+        <h3>Titulo do Artigo</h3>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+
+    </article>
+</body>
+
+    <hr>
+    <article>
+        <h3>Titulo do Artigo</h3>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+
+    </article>
+
+
+    <hr>
+    <article>
+        <h3>Titulo do Artigo</h3>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+    </article>
+
+
+    <hr>
+    <article class="destaque">
+        <p>Antes do Título</p>
+        <h3>Titulo do Artigo</h3>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+            <p> Paragrafo  <a href="">Apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="23_transicao.html" title="Veja exercícios anterior">Link Interno</a></li>
+        <li><a href="https://sites.google.com/site/thiesto1" target="blank">Link Externo</a></li>
+        <li><a href="https://sites.google.com/site/thiesto1/qc.pdf" target="blank">Link Externo</a></li>
+    </ul>
+
+</html>
