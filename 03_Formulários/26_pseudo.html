@@ -32,14 +32,21 @@
         }
 
         input[type="text"]:focus{
-
+            background: rgb(222, 211, 211);
             color: blue;
         }
 
-        a:focus{
+        a:focus, div:focus{
             background: red;
         }
         
+        a:hover{
+            background: blue;
+        }
+
+        input::placeholder{
+            color: red;
+        }
 
     </style>
 
@@ -57,6 +64,9 @@
     <hr>
 
     <input type="text">
+    <input type="text" value="valor inicial" read-only> <!-- Diferença entre place holder e o value -->
+    <input type="text" value="valor inicial" disabled>
+    <input type="text" placeholder="Valor do placeholder">
 
     <ul>
         <li><a href="#">LInk Falso</a></li>
@@ -65,5 +75,8 @@
         <li><a href="#">LInk Falso</a></li>
     </ul>
 
-</body>
+    <divn tabindex="1">Div 1</div>
+    <divn tabindex="2">Div 2</div>
+    <divn tabindex="3">Div 3</div>
+    </body>
 </html>
