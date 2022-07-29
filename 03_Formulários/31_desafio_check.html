@@ -43,8 +43,14 @@
         background-color: rgb(123, 71, 71);
     }
 
+    label input:focus + span{
+        border: 1px solid red;
+        box-shadow: 0 0 0 1px red;
+    }
+
     input{
-        visibility: hidden;
+        /* visibility: hidden; */
+        opacity: 0;
         width: 1px;
         height: 1px;
         overflow: hidden;
