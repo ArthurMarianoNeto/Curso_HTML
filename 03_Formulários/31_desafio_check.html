@@ -10,25 +10,64 @@
     <title>Botões animados</title>
 
     <style>
+        body {
+        font-family: sans-serif;
+    }
 
+    label {
+        /* display: block; */
+        margin-right: 25px;
+    }
+
+    label span{
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        background: #ccc;
+        border-radius: 15px;
+    }
+
+    label span::before{
+        content: '';
+        display: block;
+        background: #eee;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 5px;
+        transition: all .2s ease-in-out;
+    }
+
+    label input:checked + span:before{
+        transform: translateX(30px);
+        background-color: rgb(123, 71, 71);
+    }
+
+    input{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    
     </style>
 
 </head>
 <body>
   
-    <h1>Botões</h1>
+    <h1>Botões com Animação CSS</h1>
 
-    <label for="">
+    <label>
         <input type="checkbox">
         <span></span> 
         Esporte
     </label>
-    <label for="">
+    <label>
         <input type="checkbox">
         <span></span> 
         Política
     </label>
-    <label for="">
+    <label>
         <input type="checkbox">
         <span></span> 
         Educação
