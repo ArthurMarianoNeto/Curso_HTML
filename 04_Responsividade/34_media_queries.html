@@ -12,19 +12,46 @@
       <style>   
         body{
           background: yellow;
-          /* font-size: 32px; */
+          font-size: 16px;
         }
 
-        @media screen and (min-width: 600px){
+        .clearfix::after{
+          content: "";
+          clear: both;
+          display: block;
+        }
+
+        @media screen and (min-width: 400px){
           body{
             background: #999;
           }
+
+          .container div{
+            margin: 10px;
+            width: calc(50% - 20px);
+            float: left;
+            margin-bottom: 15%;
+          }
+
         }
 
         .teste{
           background: red;
           width: 320px;
           height: 50px;
+        }
+
+        .container{
+          background: white;
+          padding: 15px;
+          font-size: 24px;
+        }
+
+        .container div{
+          background: #ccc;
+          margin-bottom: 15px;
+          height: 150px;
+          font-size: 22px;
         }
 
       </style>
@@ -40,11 +67,12 @@
     Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Suco de cevadiss deixa as pessoas mais interessantis.Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Quem manda na minha terra sou euzis!
   </p>
 
-  <div class="teste"></div>
+  <!-- <div class="teste"></div> -->
 
-  <div class="container">
+  <div class="container clearfix">
     <div>Div 1</div>
     <div>Div 2</div>
+    <!-- <span style="clear: left">a</span> -->
   </div>
   
 </body>
