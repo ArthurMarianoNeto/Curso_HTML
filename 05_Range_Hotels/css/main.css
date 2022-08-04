@@ -1,0 +1,27 @@
+@charset "UTF-8"; /* UTF-8  aceita caracteres especiais*/
+
+html{
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen";
+}
+
+.top-nav{
+    background: #612674;
+    text-align: center;
+}
+
+.top-nav ul{
+    list-style:none;  /* remove o ponto de lista do menu*/
+    margin: 0; /* remove o espaçamento do menu*/
+    padding: 0; /* remove o espaçamento do menu*/
+}
+
+.top-nav a{
+    color: white; /* cor do link do menu*/
+    text-decoration: none; /* remove a sublinhado do link do menu*/
+    padding: 16px; /* espaçamento do link do menu*/
+    display: block; /* padding é aplicado em dispositivos em bloco */
+}
