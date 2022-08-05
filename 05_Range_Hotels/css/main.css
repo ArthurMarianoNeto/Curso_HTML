@@ -113,3 +113,41 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 0.2em;
     font-weight: normal;
 }
+
+.hidden{
+    width: 0;  
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.footer{
+    background-color: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding: 0 0 2em 0;
+}
+
+.footer-menushare{
+    background: #303d4c;
+    padding: .5em;
+}
+
+/* .footer-menushare ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+} */
+
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.footer-menushare a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
