@@ -8,6 +8,12 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Oxygen"; /* oxygen é um font do google */
 }
 
+.clearfix:after, .clearfix:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
 .button{
     display: inline-block;
     padding: .9em 2.5em;
@@ -150,4 +156,68 @@ h1, h2, h3, h4, h5, h6{
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+}
+
+@media screen and (min-width: 48.75em){
+
+    .top-header-logo{
+        float: left;
+    }
+
+    .top-nav{
+        /* float: right; */
+        background-color: transparent;
+        float: right;
+    }
+
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-nav a{
+        color: #713a84;
+    }
+
+    .top-nav li{
+        display: inline-block; /* para o menu ficar em linha */
+        /* margin: 0 1em; */
+    }
+
+    .top-content{
+        background-color: #521a66;
+        color: white;
+    }
+    .top-content-title, .top-content-subtitle{
+        color: white;
+    }
+
+    .col-1_4{
+        width: 44%;
+        float: left;
+        margin: 3%;
+    }
+
+    .main-content-article .button{
+        float: right;
+    }
+
+}
+
+@media screen and (min-width: 62.5em){ /* 62.5em é a largura mínima para o site ser responsivo -> 1.000/16 = 62.5 */
+    .top-content{
+        /* background-color: #521a66;
+        background-image: url(../images/bg_topo_1198x670.jpg); */
+        background: #521a66 url(../images/bg_topo_1198x670.jpg);
+        height: 15em;
+        padding-top: 15em;
+    }
+}
+
+@media screen and(min-width: 64em){ /* 64em é a largura mínima para o site ser responsivo -> 1.000/16 = 64 */
+    .top-content{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        padding: 19em 10em 10em;
+    }
+    
 }
