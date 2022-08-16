@@ -49,8 +49,42 @@
                 background-clip: content-box;
             }
             #grupo-cores div:nth-child(7){
-                background-image: linear-gradient(to right, red, yellow, green);
-                background-clip: content-box;
+                background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+                background-clip: content-box, border-box;
+            }
+            
+            #grupo-cores div:nth-child(8){
+                background-image: radial-gradient(red, blue);
+            }
+            
+            #grupo-cores div:nth-child(9){
+                background-image: radial-gradient(circle, red, blue);
+            }
+            #grupo-cores div:nth-child(10){
+                background-image: radial-gradient(ellipse, red, rgba(50, 10, 100, .3), orange, green 80%);
+            }
+            #grupo-cores div:nth-child(11){
+                background-image: radial-gradient(closest-side at 20% 90%, red, rgba(50, 10, 100, .3), orange, green 80%);
+            }
+            #grupo-cores div:nth-child(12){
+                background-image: radial-gradient(farthest-side at 20% 90%, red, rgba(50, 10, 100, .3), orange, green 80%);
+            }
+            #grupo-cores div:nth-child(13){
+                background-image: radial-gradient(closest-corner at 20% 90%, red, rgba(50, 10, 100, .3), orange, green 80%);
+            }
+            #grupo-cores div:nth-child(14){
+                background-image: radial-gradient(farthest-corner at 20% 90%, red, rgba(50, 10, 100, .3), orange, green 80%);
+            }
+            #grupo-cores div:nth-child(15){
+                background-image: repeating-linear-gradient(red 0%, yellow 25%, green 50%, blue 75%, red 100%);
+            }
+            #grupo-cores div:nth-child(16){
+                background-image: repeating-radial-gradient(red 0%, yellow 25%, green 50%, blue 75%, red 100%);
+                background-attachment: fixed;
+            }
+            #grupo-cores div:nth-child(17){
+                background-image: repeating-radial-gradient(red 0%, transparent 25%, rgba(50, 10, 100, .3) 50%, orange 75%, green 100%), linear-gradient(rgba(100%, 0%, 0%, .5), rgba(0%, 100%, 0%, .5));
+                background-attachment: scroll, fixed;
             }
             
         </style>
