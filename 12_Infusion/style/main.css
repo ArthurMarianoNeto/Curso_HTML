@@ -127,21 +127,19 @@ img {
     margin-top: 2.5em;
 }
 
-.people-cards__card {
-        
-}
+.people-cards__card {}
 
-.people-cards__card:hover{
+.people-cards__card:hover {
     outline: 5px solid #63c6ae;
     outline-offset: -5px;
 }
 
 .people-cards__card:hover .people-cards__title,
-.people-cards__card:hover .people-cards__text{
-    color: #63c6ae; 
+.people-cards__card:hover .people-cards__text {
+    color: #63c6ae;
 }
 
-.people-cards__card:hover .people-cards__avatar img{
+.people-cards__card:hover .people-cards__avatar img {
     transform: translateY(-50%)
 }
 
@@ -175,27 +173,27 @@ img {
 
 /* -------------------------------------- */
 
-.content{
+.content {
     background: #f8f9f9;
     padding: 20px 0 80px;
     border-top: 1px solid #e3e3e3;
-   }
+}
 
-   .content h3{
+.content h3 {
     color: #737c85;
     font-size: 21px;
     padding-top: 40px;
     font-weight: 400;
 
-   }
+}
 
-   .content p{
+.content p {
     color: #929da5;
     font-size: 14px;
     word-spacing: 3px;
-   }
+}
 
-   .button{
+.button {
     padding: 15px 40px;
     border-radius: 3px;
     /* background: gray;
@@ -209,9 +207,10 @@ img {
 }
 
 
-.button:hover{
+.button:hover {
     background-color: #929da5;
 }
+
 .button-primary {
     background-color: #69c6ae;
     color: white;
@@ -229,18 +228,18 @@ img {
     padding: 5px 0;
 }
 
-.last-articles__title h2{
+.last-articles__title h2 {
     font-size: 24px;
     color: white;
     text-transform: uppercase;
     font-weight: 400;
 }
 
-.last-articles__thumbs{
+.last-articles__thumbs {
     display: block;
 }
 
-.last-articles__thumbs{
+.last-articles__thumbs {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: auto;
@@ -250,113 +249,125 @@ img {
 
 /* ---------------------------- */
 
-.laptop-slider{
+.laptop-slider {
     background-color: #242a2c;
     padding: 124px 0 100px;
     width: 100%;
     overflow: auto;
 }
 
-.slidershow{
+.slidershow {
     white-space: nowrap;
 }
 
-.slidershow figure{
+.slidershow figure {
     display: inline-block;
 }
 
 /* ---------------------------------- */
 
-.quote-container{
+.quote-container {
     background-color: #63c6ae;
     padding: 50px 0;
     border-bottom: 12px solid #48b9a1;
 }
 
-.quote-slideshow h2{
+.quote-slideshow h2 {
     color: white;
     font-size: 30px;
     font-style: italic;
     font-weight: 300;
 }
 
-.quote-slideshow figcaption{
+.quote-slideshow figcaption {
     color: white;
     font-size: 18px;
     text-align: center;
 }
 
-.no-js .quote-slideshow figure + figure{
+.no-js .quote-slideshow figure+figure {
     margin-top: 5em;
 }
 
-.footer{
+.footer {
     background-color: #242a2c;
     padding: 50px 0 250px;
     color: #454e51;
     font-size: 14px;
 }
 
-.footer__links li{
+.footer__links li {
     list-style: none;
 }
 
-.footer__links a{
+.footer__links a {
     color: #454e51;
     display: block;
     font-weight: 600;
     text-decoration: none;
 }
 
+.footer__logo {
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 1024px) {
-    .header{
+    .header {
         position: fixed;
     }
 
-    .logo-text{
+    .logo-text {
         width: 25%;
         box-sizing: border-box;
     }
 
-    .header__btnMenu{
+    .header__btnMenu {
         display: none;
     }
 
-    .header__nav{
+    .header__nav {
         float: left;
         width: 74%;
         clear: none;
         max-width: 800px;
     }
 
-    .header__nav ul{
+    .header__nav ul {
         display: flex;
         justify-content: space-around;
     }
 
-    .header__nav li{
+    .header__nav li {
         border-bottom: none;
         flex-grow: 1;
     }
 
-    .header__nav a{
+    .header__nav a {
         background: white;
-        
+
     }
 
-    .people-cards{
+    .people-cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
     }
 
-    .content .container{
+    .content .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
-    
-    .last-articles__thumbs{
+
+    .last-articles__thumbs {
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footer .container {
+        display: flex;
+    }
+
+    .footer .container>* {
+        margin: 1.5em;
     }
 }
