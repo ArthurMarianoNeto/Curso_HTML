@@ -6,7 +6,7 @@ function Menu(config) {
         document.querySelector(config.toggleBtn) : config.toggleBtn;
 
     this.maxWidth = config.widthEnable || false;
-    
+
     var _opened = false;
     var _this = this;
 
@@ -14,20 +14,37 @@ function Menu(config) {
 
     this.btn.addEventListener('click', openOrClose)
 
-    function openOrClose(){
-        if(!_opened){
+    function openOrClose() {
+        if (!_opened) {
             openMenu()
         } else {
             closeMenu()
         }
     }
 
-    function openMenu(){
-        _opened = true;
+    function openMenu() {
+        var _top = this.nav.getBoundingClientRect().top + 'px'
 
+        var _style = {
+            maxHeight: 'calc(100vh - ' + _top + ')',
+            overflow: 'hidden'
+        }
+
+        applyStyleToNav(_style)
+
+        _opened = true;
     }
 
-    function closeMenu(){
+    function applyStyleToNav(_style) {
+        Object.keys(_style).forEach(stl => {
+            _this.nav.style[stl] = _style[stl]
+            // _this.nav.style.maxHeight = 'calc(100vh - 50px)'
+            // _this.nav.style.overflow = 'hidden'
+        
+        })
+    }
+
+    function closeMenu() {
         _opened = false;
     }
 }
