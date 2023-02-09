@@ -77,7 +77,14 @@ img {
 
 }
 
-/* .header__btnMenu {} */
+.header__btnMenu {
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+
+}
 
 
 /* -------------------------------------------------- */
