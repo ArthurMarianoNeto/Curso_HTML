@@ -11,6 +11,7 @@ function Menu(config) {
     var _this = this;
 
     this.btn.removeAttribute('style');
+    closeMenu()
 
     this.btn.addEventListener('click', openOrClose)
 
@@ -45,6 +46,12 @@ function Menu(config) {
     }
 
     function closeMenu() {
+        var _style = {
+            maxHeight: '0px',
+            overflow: 'hidden'
+        }
+
+        applyStyleToNav(_style)
         _opened = false;
     }
 }
