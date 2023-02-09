@@ -32,7 +32,6 @@ function Menu(config) {
 
     function openOrClose() {
         if (!_opened) {
-            openMenu()
         } else {
             closeMenu()
         }
