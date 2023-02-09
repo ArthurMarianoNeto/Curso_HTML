@@ -13,6 +13,18 @@ function Menu(config) {
     this.btn.removeAttribute('style');
     closeMenu()
 
+    if (this.maxWidth) {
+        windowaddEvenListed('resize', e => {
+            if (window.innerWidth > _this.maxWidth) {
+                _this.nav.removeAttribute('style')
+                _opened = true;
+            } else if(!this.nav.getAttribute('style')) {
+                closeMenu();
+            }
+        })
+    }
+
+
     this.btn.addEventListener('click', openOrClose)
 
     function openOrClose() {
@@ -41,7 +53,7 @@ function Menu(config) {
             _this.nav.style[stl] = _style[stl]
             // _this.nav.style.maxHeight = 'calc(100vh - 50px)'
             // _this.nav.style.overflow = 'hidden'
-        
+
         })
     }
 
