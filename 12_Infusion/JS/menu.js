@@ -18,11 +18,11 @@ function Menu(config) {
             if (window.innerWidth > _this.maxWidth) {
                 _this.nav.removeAttribute('style')
                 _opened = true;
-            } else if(!this.nav.getAttribute('style')) {
+            } else if (!this.nav.getAttribute('style')) {
                 closeMenu();
             }
         })
-        if(window.innerWidth() <= _this.maxWidth){
+        if (window.innerWidth() <= _this.maxWidth) {
             closeMenu();
         }
     }
@@ -32,7 +32,6 @@ function Menu(config) {
 
     function openOrClose() {
         if (!_opened) {
-            openMenu()
         } else {
             closeMenu()
         }
