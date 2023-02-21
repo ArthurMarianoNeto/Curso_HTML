@@ -86,10 +86,41 @@ img {
 
 }
 
-.js .header__nav{
+.js .header__nav {
     transition: 1s;
 }
 
+
+.js .laptop-slider {
+    overflow: hidden;
+}
+
+.js .laptop-slider .slidershow {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+
+.js .laptop-slider figure {
+    position: absolute;
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.js .laptop-slider figure .show {
+    opacity: 1;
+}
+
+
+.js .laptop-slider .prev, .js .laptop-slider .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+}
 
 /* -------------------------------------------------- */
 
@@ -143,7 +174,7 @@ img {
     margin-top: 2.5em;
 }
 
-.people-cards__card {}
+/* .people-cards__card {} */
 
 .people-cards__card:hover {
     outline: 5px solid #63c6ae;
