@@ -120,6 +120,15 @@ img {
     z-index: 3;
     position: absolute;
     top: 50%;
+    cursor: pointer;
+}
+
+.js .laptop-slider .prev{
+    left: 10px;
+}
+
+.js .laptop-slider .next{
+    right: 10px;
 }
 
 /* -------------------------------------------------- */
