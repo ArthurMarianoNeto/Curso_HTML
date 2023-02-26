@@ -112,10 +112,12 @@ img {
     width: 100%;
     top: 0;
     left: 0;
+    /* position: absolute; */
 }
 
 .js .laptop-slider figure .show {
     opacity: 1;
+    position: static;
 }
 
 
