@@ -13,12 +13,15 @@
         var numero = prompt('Digite um numero: ');
         numero = parseFloat(numero);
 
-        var indice = 1;
-        // repita até que indice seja <= 100
-        while(indice <= 100){
-            document.write( numero + ' x ' + indice + ' = ' + (numero * indice) + '<br');
-            indice = indice + 1;
+        // var indice = 1;
+        // // repita até que indice seja <= 100
+        // while(indice <= 100){
+        // }
+        
+        for(var i = 1; i <= 100; i++);{
+        document.write( numero + ' x ' + indice + ' = ' + (numero * indice) + '<br');
         }
+        // indice = indice + 1;
         document.write('Saiu do loop');
         // document.write(numero + ' x 1 = ' + (numero*1) + '<br>');
         // document.write(numero + ' x 2 = ' + (numero*2) + '<br>');
