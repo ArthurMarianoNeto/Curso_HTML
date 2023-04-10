@@ -11,6 +11,8 @@
 
 <body>
     <h1>Lógica de Progração</h1>
+    <button onclick="mostrarTabuada()">Criar tabuada</button>
+    <button onclick="limparTabuada()">Limpar tabuada</button>
     <div id="output">
         Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl.Viva Forevis aptent
         taciti sociosqu ad litora torquent.Atirei o pau no gatis, per gatis num morreus.Interessantiss quisso pudia ce
@@ -21,6 +23,12 @@
         não altera o pão duris.Atirei o pau no gatis, per gatis num morreus.Per aumento de cachacis, eu reclamis.
     </div>
     <script>
+        function mostrarTabuada(){
+            alert("Mostrar Tabuada");
+        }
+
+        mostrarTabuada();
+
         var output = document.querySelector('#output');
         var mensagem = '';
         for (var i = 0; i < 1001; i++) {
