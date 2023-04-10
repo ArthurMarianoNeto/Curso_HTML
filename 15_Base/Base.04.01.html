@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lógica de Programção</title>
-
 </head>
 
 <body>
@@ -23,17 +22,36 @@
         não altera o pão duris.Atirei o pau no gatis, per gatis num morreus.Per aumento de cachacis, eu reclamis.
     </div>
     <script>
-        function mostrarTabuada(){
-            alert("Mostrar Tabuada");
+        function mostrarTabuada() {
+            // alert("Mostrar Tabuada chamada");
+            // Perguntar o numero para o usuário 
+            var n = prompt('Digite um numero');
+            // converter o numero 
+            n = parseFloat(n);
+            // criar uma variável que servira de indice 
+            var i = 1;
+            // enquanto indice <= 100 contaternar na variavel 
+            while(i<=100){
+                mensagem += n +' x ' + i + ' = ' + (n*i) + '<br>';
+                i++;
+            }
+
+            output.innerHTML = mensagem;
+            // mostrar mensagem no output 
         }
 
-        mostrarTabuada();
+            function limparTabuada() {
+                mensagem = '';
+                output.innerHTML = mensagem;
+            }
 
-        var output = document.querySelector('#output');
-        var mensagem = '';
-        for (var i = 0; i < 1001; i++) {
-            mensagem += 'i: ' + i + '<br>'
-        }
+            // mostrarTabuada();
+
+            var output = document.querySelector('#output');
+            var mensagem = '';
+            // // for (var i = 0; i < 1000; i++) {
+            // //     mensagem += 'i: ' + i + '<br>'
+            // // }
         console.log(output);
         output.innerHTML = mensagem;
     </script>
