@@ -11,10 +11,10 @@
 <body>
     <h1>Calculadora Caculosa</h1>
 
-    <button onclick="Somar()">+</button>
-    <button onclick="Subtrair()">-</button>
-    <button onclick="Multiplicar()">*</button>
-    <button onclick="Dividir()">/</button>
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
 
     <div id="output"> </div>
 
@@ -35,6 +35,29 @@
             n1 = n1 + n;
             escreve();
         }
+        
+
+        function subtrair(){
+            var n = prompt("digite outro numero");
+            n = parseFloat(n);
+            n1 = n1 - n;
+            escreve();
+        }
+
+        function multiplicar(){
+            var n = prompt("digite outro numero");
+            n = parseFloat(n);
+            n1 = n1 * n;
+            escreve();
+        }
+
+        function dividir(){
+            var n = prompt("digite outro numero");
+            n = parseFloat(n);
+            n1 = n1 / n;
+            escreve();
+        }
+
     </script>
 
 </body>
