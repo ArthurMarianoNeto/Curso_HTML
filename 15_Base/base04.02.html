@@ -21,6 +21,13 @@
     <script>
         var n1 = prompt("Digite um numero");
         n1 = parseFloat(n1);
+
+        escreve();
+
+        function escreve() {
+            var output = document.querySelector("#output");
+            output.innerHTML = n1;
+        }
     </script>
 
 </body>
