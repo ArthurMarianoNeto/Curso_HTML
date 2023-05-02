@@ -11,10 +11,10 @@
 <body>
     <h1>Calculadora Cabulosa</h1>
 
-    <button onclick="somar()">+</button>
-    <button onclick="subtrair()">-</button>
-    <button onclick="multiplicar()">*</button>
-    <button onclick="dividir()">/</button>
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
 
     <div id="output"></div>
 
@@ -36,32 +36,6 @@
             n1 += n;
             escreve();
         }
-
-
-        function subtrair() {
-            var n = prompt("digite outro numero");
-            n = parseFloat(n);
-            // n1 = n1 - n;
-            n1 -= n;
-            escreve();
-        }
-
-        function multiplicar() {
-            var n = prompt("digite outro numero");
-            n = parseFloat(n);
-            // n1 = n1 * n;
-            n1 *= n;
-            escreve();
-        }
-
-        function dividir() {
-            var n = prompt("digite outro numero");
-            n = parseFloat(n);
-            // n1 = n1 / n;
-            n1 /= n;
-            escreve();
-        }
-
     </script>
 
 </body>
