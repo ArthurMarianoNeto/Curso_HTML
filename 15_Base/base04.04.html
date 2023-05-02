@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cabulosa</title>
+</head>
+
+<body>
+    <h1>Calculadora Cabulosa</h1>
+
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+
+    <div id="output"></div>
+
+    <script>
+        var n1 = prompt("Digite um numero");
+        n1 = parseFloat(n1);
+        // função principal de escrever em tela 
+        escreve();
+
+        function escreve() {
+            var output = document.querySelector("#output");
+            output.innerHTML = n1;
+        }
+
+        function somar() {
+            var n = prompt("digite outro numero");
+            n = parseFloat(n);
+            // n1 = n1 + n;
+            n1 += n;
+            escreve();
+        }
+
+
+        function subtrair() {
+            var n = prompt("digite outro numero");
+            n = parseFloat(n);
+            // n1 = n1 - n;
+            n1 -= n;
+            escreve();
+        }
+
+        function multiplicar() {
+            var n = prompt("digite outro numero");
+            n = parseFloat(n);
+            // n1 = n1 * n;
+            n1 *= n;
+            escreve();
+        }
+
+        function dividir() {
+            var n = prompt("digite outro numero");
+            n = parseFloat(n);
+            // n1 = n1 / n;
+            n1 /= n;
+            escreve();
+        }
+
+    </script>
+
+</body>
+
+</html>
