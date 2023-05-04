@@ -10,7 +10,12 @@
 
 <body>
     <h1>Lógica de Programação com JavaScript</h1>
-    <button onclick="mostrarArea(largura, altura)">Mostrar Área e alert</button>
+    <button onclick="mostrarAreaAlert()">Mostrar Área e alert</button>
+    <button onclick="mostrarAreaOutput()">Mostrar no output</button>
+
+    <div id="output">
+
+    </div>
 </body>
 <script>
     var largura = prompt('Digite a largura ');
@@ -19,12 +24,19 @@
     var altura = prompt('Digite a altura ')
     altura = parseFloat(altura);
 
-    function mostrarArea(l, a) {
-        alert('Recebendo parametro: ' + l);
-        alert('Recebendo parametro: ' + a);
-        alert('Área total: ' + (l*a));
+    function mostrarAreaAlert() {
+        var area = calcularArea(largura, altura);
+        alert('A área total é: ' + area);
     }
-    mostrarArea(5,10)
+
+    function mostrarAreaOutput(){
+        var area = calcularArea(largura, altura);
+        document.querySelector('#output').innerHTML = 'A área total é: ' + area;
+    }
+
+    function calcularArea(l, a){
+        return l * a;
+    }
 </script>
 
 </html>
