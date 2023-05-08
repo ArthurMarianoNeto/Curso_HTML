@@ -11,10 +11,10 @@
 <body>
     <h1>Calculadora Cabulosa</h1>
 
-    <button onclick="calcular('+')">+</button>
-    <button onclick="calcular('-')">-</button>
-    <button onclick="calcular('*')">*</button>
-    <button onclick="calcular('/')">/</button>
+    <button onclick="iniciarCalculo('+')">+</button>
+    <button onclick="iniciarCalculo('-')">-</button>
+    <button onclick="iniciarCalculo('*')">*</button>
+    <button onclick="iniciarCalculo('/')">/</button>
 
     <div id="output"></div>
 
@@ -24,6 +24,12 @@
         // função principal de escrever em tela 
         escreve(n2);
 
+        function iniciarCalculores(simbolo){
+            var n1 = document.querySelector('#output').textContent;
+            var n2 = prompt('Digite outro número ');
+            n2 = parseFloat(n2);
+        }
+
         function escreve(mensagem) {
             var output = document.querySelector("#output");
             output.innerHTML = mensagem;
@@ -31,25 +37,32 @@
 
         function calcular(simbolo, n1, n2) {
 
+            var numeroCalculado = null; 
+
             switch (simbolo) {
                 case '+':
-                    n1 += n;
+                    // n1 += n2;
+                    numeroCalculado = n1 + n2;
                     break;
                 
                 case '-':
-                    n1 -= n;
+                    // n1 -= n2;
+                    numeroCalculado = n1 - n2;
                     break;
                 
                 case '*':
-                    n1 *= n;
+                    // n1 *= n2;
+                    numeroCalculado = n1 * n2;
                     break;
                 
                 case '/':
-                    n1 /= n;
+                    // n1 /= n2;
+                    numeroCalculado = n1 / n2;
                     // break;
                 
             }
-            escreve();
+            // escreve();
+            return numeroCalculado;
         }
     </script>
 
