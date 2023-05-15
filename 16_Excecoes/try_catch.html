@@ -42,11 +42,14 @@
         function calcular(simbolo, n1, n2) {
 
             if(simbolo !== '+' && simbolo !== '-' && simbolo !== '*' && simbolo !== '/'){
-                alert('Digite um simbolo válido');
+                throw new Error('Digite um simbolo válido');
+                // alert('Digite um simbolo válido');
+                return 0; 
             }
 
             if (isNaN(n1) || isNaN(n2)) {
                 alert('Chamase a função somente com números');
+                return 0;
             }
 
             var numeroCalculado = null; 
