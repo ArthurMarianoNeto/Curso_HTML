@@ -2,7 +2,6 @@ Algoritmo "Calculadora_V1"
 
 //------------------------------------------------
 procedimento ROTSOMA
-
 var
 soma, num1, num2 : real
 inicio
@@ -28,11 +27,11 @@ opcao : inteiro
        escreval("[5] - Fim de programa ")
        leia(opcao)
          se (opcao <> 5) entao
-             caso 1 faca ROTSOMA
-             caso 2 faca R OTSUBTRACAO
-             caso 3 faca ROTMULTIPLICACAO
-             caso 4 faca ROTDIVISAO
-         outrocaso
+           escolha opcao
+             caso 1
+                  ROTSOMA()
+              outrocaso
                escreval("Opção inválida - Tente novamente")
+           fimescolha
          fimse
  Fimalgoritmo
