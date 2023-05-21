@@ -47,7 +47,25 @@ limpatela
    escreva("O valor equivalente de multiplicação é ", multiplicacao)
 fimprocedimento
 //------------------------------------------------
-
+procedimento ROTDIVISAO
+var
+   divisao, num1, num2 : real
+inicio
+limpatela
+   escreval("Rotina de Divisão ")
+   escreval
+   escreva("Insira o primeiro termo ")
+   leia(num1)
+   escreva("Insira o segundo termo ")
+   leia(num2)
+     se num2 <> 0 entao
+      divisao <- num1/num2
+     senao
+       escreval("Impossível calcular")
+     fimse
+   escreva("O valor equivalente de multiplicação é ", divisao:4:2)
+fimprocedimento
+//------------------------------------------------
 
 Var
    opcao : inteiro
@@ -74,7 +92,7 @@ se (opcao <> 5) entao
       caso 3
          ROTMULTIPLICACAO()
       caso 4
-         ROTSOMA()
+         ROTDIVISAO()
       outrocaso
          escreval("Opção inválida - Tente novamente")
       fimescolha
