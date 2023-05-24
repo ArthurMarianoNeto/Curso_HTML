@@ -31,7 +31,7 @@ inicio
        popb <- fincrpop(popb,0.13)
        anos <- anos + 1
     ate popb >= popa
-    escreval( "Anos : " , anos, " Pop A:", popa:6:0, " Pop B:", popb : 6 : 0 )
+
 
     popa <- 100000
     popb <- 60000
