@@ -1,15 +1,10 @@
 algoritmo "BuscaSeqRegistro"
-// Função : Busca Seqüencial com Registros - Demonstração do Visualg
-// Autor : Cláudio Morgado de Souza
-// Data : 25/02/2007
-dos
-
+//dos
 tipo
    tlistafunc = registro
       codigo: inteiro
       salario: real
    fimregistro
-   
 var
    j,k, vb : inteiro
    dados : vetor[1..10] de tlistafunc
