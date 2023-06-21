@@ -4,7 +4,7 @@ m, n, x, j, i  : inteiro
 mat : vetor[0..19,0..19] de inteiro
 Inicio
 m <- 2
-n <- 4
+n <- 5
 x <- 0
    para i de 0 ate m-1 faca
      x <- x +i
