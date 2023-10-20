@@ -3,109 +3,116 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
     <title>Projeto Aprenser</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 
 <body>
-    <div class="wrapperContainer-dark">
+    <div class="wrapperContainer wrapperContainer-dark wrapperContainer-fixed">
         <header class="header container">
             <img src="imagens/logoAprenser.png" alt="Aprenser">
+
             <nav class="header_nav">
                 <ul>
                     <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#cursos">Nossa Escola</a></li>
-                    <li><a href="#cursos">Contatos</a></li>
+                    <li><a href="#escola">Nossa Escola</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-    <div class="wrapperContainer-hero">
+
+    <div class="wrapperContainer wrapperContainer-hero">
         <section class="container heroBanner">
-            <h1>O saber é o que transforma nosso ser</h1>
-            <a href="#" class="btn">Saiba mais</a>
-            <img src="imagens/heroBanner.png" alt="Mulher segurando flores">
+            <div class="header_content">
+                <h1 class="hero_title">O saber é o que transforma nosso <span class="upper">ser</span> </h1>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+            <img src="imagens/HeroImage.png" alt="Mulher segurando flores">
         </section>
     </div>
 
-    <div class="wrapperContainer-light">
-        <section id="cursos" class="cursos container">
-            <h2>Principais Cursos</h2>
+    <div class="wrapperContainer wrapperContainer-light wrapperContainer-padded" id="cursos">
+        <section class="cursos container">
+            <h2 class="section_title">Principais Cursos</h2>
             <div class="cursosContainer">
-
                 <article class="curso_card">
-                    <img src="imagens/curso-design-1.png" alt="Curso de Design">
-                    <div class="crusos_card_content">
-                        <h3>Design para Web</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quas harum perferendis
-                            recusandae, voluptatem placeat veritatis impedit ipsam assumenda praesentium corporis,
-                            voluptas magnam, neque quaerat consequuntur sapiente non sed quidem amet necessitatibus.
-                            Doloremque delectus vel, officia quia iste suscipit illum, provident voluptas illo, quae
-                            saepe!</p>
+                    <img src="imagens/curso-design.png" alt="Curso design">
+                    <div class="cursos_card_content">
+                        <h3>Design para web</h3>
+                        <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs
+                            atraentes e funcionais para sites e aplicativos móveis.</p>
                     </div>
                 </article>
 
-                <div class="cursosContainer">
-
-                    <article class="curso_card">
-                        <img src="imagens/curso-design-1.png" alt="Front-End">
-                        <div class="crusos_card_content">
-                            <h3>Design para Web</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore enim rerum
-                                atque ipsam debitis culpa, at temporibus molestias odit praesentium esse laboriosam
-                                quidem distinctio nobis, totam velit ad! Ipsa tempora in fuga vitae sit autem illum
-                                dignissimos animi quaerat id. Magni repudiandae dolorum dolore. Voluptatum, ut? Quas,
-                                perferendis nobis.</p>
-                        </div>
-                    </article>
-
-                    <div class="cursosContainer">
-
-                        <article class="curso_card">
-                            <img src="imagens/curso-design-1.png" alt="Back-End">
-                            <div class="crusos_card_content">
-                                <h3>Design para Web</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus nisi
-                                    eum ad itaque molestiae, soluta velit? Doloremque laborum inventore quasi sed
-                                    ratione dolore cum, ut ea minus ad repellendus aperiam doloribus atque repellat
-                                    voluptates est accusamus ullam omnis ipsa harum eos. Consequuntur accusantium porro,
-                                    ex neque illo blanditiis, velit, corrupti animi eveniet adipisci aliquam possimus
-                                    quaerat. Corrupti omnis officiis odio, iusto reiciendis deserunt rem ea atque
-                                    numquam repellendus neque nihil libero. Qui.</p>
-                            </div>
-                        </article>
+                <article class="curso_card">
+                    <img src="imagens/curso-design-1.png" alt="Curso Front-end">
+                    <div class="cursos_card_content">
+                        <h3>Front End Developer</h3>
+                        <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web,
+                            aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
                     </div>
-                    <a href="#" class="btn">Ver mais cursos</a>
+                </article>
+
+                <article class="curso_card">
+                    <img src="imagens/curso-design-2.png" alt="Curso Back-end">
+                    <div class="cursos_card_content">
+                        <h3>Back End Developer</h3>
+                        <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de
+                            dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                    </div>
+
+
+                </article>
+            </div>
+            <a href="#" class="btn section_btn">Ver mais cursos</a>
         </section>
     </div>
-    <div class="wrapperContainer-dark-2">
-        <section class="container" id="escola">
-            <img src="imagens/nossa-escola.png" alt="Jovem mulher feliz">
-            <h2>Nossa escola</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum error quas accusantium incidunt
-                tempora laudantium deleniti cumque ipsa nulla doloribus dolores, blanditiis iusto id explicabo magnam
-                minima beatae et harum rem esse placeat natus? Sapiente error minima vero deleniti consectetur
-                reiciendis inventore modi. Quas eveniet atque ratione nesciunt, modi voluptatum quisquam id velit quod
-                adipisci! Quidem, rem animi repudiandae laborum omnis, harum suscipit nostrum distinctio odit dolorum
-                facere, incidunt cupiditate adipisci reiciendis. Ut, sint repudiandae. Excepturi placeat nulla iste nam
-                molestiae repellat. Deleniti provident ipsam doloremque placeat aspernatur ad.</p>
+
+    <div class="wrapperContainer wrapperContainer-dark2 wrapperContainer-padded" id="escola">
+        <section class="container escola">
+            <img src="imagens/nossa-escola.png" alt="Mulher jovem feliz">
+            <div class="escola_content">
+                <h2 class="escola_title">Nossa escola</h2>
+                <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola
+                    de
+                    tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento
+                    de
+                    software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um
+                    ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias
+                    para
+                    ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional
+                    de
+                    tecnologia bem-sucedido.</p>
+            </div>
         </section>
     </div>
-    <div class="wrapperContainer-light">
-        <section class="container" id="contatos">
-            <h2>Contatos</h2>
-            <img src="imagens/map.png" alt="Mapa Cabuloso">
-            <address>
-                Av. da Liberdade, 1001 <br>
-                tel.: +365 21 123 456 <br>
-                email.: contato@aprenser.com.br <br>
-            </address>
+
+    <div class="wrapperContainer wrapperContainer-light wrapperContainer-padded" id="contatos">
+        <section class="container">
+            <h2 class="section_title">Contatos</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.9248899785563!2d-52.81970437079146!3d-28.45847179890542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd493b24699437%3A0xdb26ce86faa682a9!2sAv.%20Dr.%20Waldomiro%20Graeff%2C%201233%20-%20Centro%2C%20N%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000%2C%20Brasil!5e0!3m2!1spt-PT!2spt!4v1680682208842!5m2!1spt-PT!2spt"
+                width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address class="contatos_address">Av. da Liberdade, 1001<br>
+                Tel.: +351 21 123 456<br>
+                E-mail: contato@aprenser.com</address>
         </section>
     </div>
-     <div class="wrapperContainer-dark">
-        <footer>Desenvolvido por <a href="#">Aprenser</a></footer>
-     </div>
+
+    <div class="wrapperContainer wrapperContainer-dark">
+        <footer class="footer">Desenvolvido por <a href="https://serliv.com">Serliv</a> </footer>
+    </div>
 </body>
 
 </html>
